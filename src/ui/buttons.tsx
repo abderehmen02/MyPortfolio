@@ -7,7 +7,7 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 
 
 export const PrimaryBtn : React.FC<ButtonProps> = ({children , className , ...props})=>{
-    return <button {...props} className="px-4 py-2 rounded-3xl  hover:text-white hover:bg-ternary border-ternary border-2 text-ternary" >
+    return <button {...props} className="px-4 py-2 rounded-3xl   hover:text-white hover:bg-ternary border-ternary border-2 text-ternary" >
 {children}
     </button>
 }

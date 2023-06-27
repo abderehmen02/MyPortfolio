@@ -1,4 +1,5 @@
 import { Description } from '@/components/description'
+import { ExperienceSection } from '@/components/experience'
 import { HomeHeading } from '@/components/heading'
 import { Hero } from '@/components/hero'
 import { TechsSection } from '@/components/techs'
@@ -10,6 +11,7 @@ export default function Home() {
 <HomeHeading/>      
 <Hero/>
 <Description/>
+<ExperienceSection/>
 <TechsSection/>
     </main>
   )
