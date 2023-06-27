@@ -22,6 +22,7 @@ module.exports = {
      secondaryLight : "#DE8128" ,
      secondaryDark : "#915821" ,
      ternary : "#6703fc" ,
+     whiteYellwed : "#ededbe" ,
      white : "#fff"  ,
      black : "#000"
     }  ,
