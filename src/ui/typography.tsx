@@ -1,3 +1,6 @@
+import React from "react"
+
+
 type TextProps = React.HTMLProps<HTMLDivElement>;
 
 

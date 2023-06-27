@@ -4,6 +4,7 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/ui/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     screens: {
@@ -20,7 +21,9 @@ module.exports = {
      primaryLight : "#3EDE4E" ,
      secondaryLight : "#DE8128" ,
      secondaryDark : "#915821" ,
-     ternary : "#7B54DE"
+     ternary : "#6703fc" ,
+     white : "#fff"  ,
+     black : "#000"
     }  ,
      extend: {
       backgroundImage: {
