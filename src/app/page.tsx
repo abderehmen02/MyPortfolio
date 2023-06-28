@@ -1,3 +1,4 @@
+import { CertaficateSection } from '@/components/certaficates'
 import { Description } from '@/components/description'
 import { ExperienceSection } from '@/components/experience'
 import { HomeHeading } from '@/components/heading'
@@ -12,6 +13,7 @@ export default function Home() {
 <Hero/>
 <Description/>
 <ExperienceSection/>
+<CertaficateSection/>
 <TechsSection/>
     </main>
   )
