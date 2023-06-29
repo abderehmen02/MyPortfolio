@@ -1,19 +1,25 @@
+"use client"
 import React, { ButtonHTMLAttributes } from 'react'
-import { Text } from './typography';
-
+import { BlodText, Text } from './typography';
+import {motion } from 'framer-motion'
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 
 
 
 export const PrimaryBtn : React.FC<ButtonProps> = ({children , className , ...props})=>{
-    return <button {...props} className="px-4 py-2 rounded-3xl   hover:text-white hover:bg-ternary border-ternary border-2 text-ternary" >
-{children}
-    </button>
+    return     <button {...props} className=" button" >
+    {children}
+        </button>
 }
 
 export const OutlinedBtn : React.FC<ButtonProps> = ({children , className , ...props})=>{
-    return <button {...props} className="px-4 py-2 hover:text-ternary " >
-{children}
-    </button>
+    return    <button {...props} className="px-4 py-2 primaryBtn" >
+<div className='DarkBtn' ></div> <BlodText>   {children}</BlodText>
+        </button>
+}
+
+
+export const TextButton : React.FC<ButtonProps> = ({children , className , ...props})=>{
+    return <button {...props}  className="glow-on-hover" ><BlodText className=''>{children}</BlodText></button>
 }

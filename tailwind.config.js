@@ -1,3 +1,6 @@
+const colors = require('tailwindcss/colors');
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -17,14 +20,14 @@ module.exports = {
       
     },
     colors : {
-     primaryDark :  "#1A9126" ,
-     primaryLight : "#3EDE4E" ,
-     secondaryLight : "#DE8128" ,
-     secondaryDark : "#915821" ,
-     ternary : "#6703fc" ,
+     primaryDark :  "#64AD5E" ,
+     primaryLight : "#24E713" ,
+     secondaryLight : "#FF3DB5" ,
+     secondaryDark : "#A30768" ,
      whiteYellwed : "#ededbe" ,
      white : "#fff"  ,
-     black : "#000"
+     black : "#000" , 
+     ...colors 
     }  ,
      extend: {
       backgroundImage: {
