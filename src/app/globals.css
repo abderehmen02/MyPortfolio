@@ -3,7 +3,13 @@
 @tailwind utilities;
 
 
-
+:root {
+  --primaryDark :  "#64AD5E" ;
+  --primaryLight : "#24E713"  ;
+  --secondaryLight : "#FF3DB5" ;
+  --secondaryDark : "#A30768" ;
+  --whiteYellwed : "#ededbe" ;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -20,6 +26,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  scroll-behavior:  smooth;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -92,53 +99,5 @@ body {
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
-}
-
-
-/* primary button styling */
-
-.button {
-  display: inline-block;
-  padding: .75rem 1.25rem;
-  border-radius: 10rem;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1rem;
-  letter-spacing: .15rem;
-  transition: all .3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-
-.button:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: "#0cf";
-  border-radius: 10rem;
-  z-index: -2;
-}
-.button:before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  background-color: darken("#0cf", 15%);
-  transition: all .3s;
-  border-radius: 10rem;
-  z-index: -1;
-}
-.button:hover {
-  color: #fff;
-  &:before {
-    width: 100%;
-  }
 }
 
