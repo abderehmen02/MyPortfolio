@@ -21,5 +21,5 @@ export const OutlinedBtn : React.FC<ButtonProps> = ({children , className , ...p
 
 
 export const TextButton : React.FC<ButtonProps> = ({children , className , ...props})=>{
-    return <button {...props}  className="glow-on-hover" >{children}</button>
+    return <button {...props}  className="glow-on-hover" ><BlodText className=''>{children}</BlodText></button>
 }
