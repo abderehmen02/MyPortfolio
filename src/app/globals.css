@@ -4,11 +4,11 @@
 
 
 :root {
-  --primaryDark :  "#64AD5E" ;
-  --primaryLight : "#24E713"  ;
-  --secondaryLight : "#FF3DB5" ;
-  --secondaryDark : "#A30768" ;
-  --whiteYellwed : "#ededbe" ;
+  --primaryDark: #64AD5E;
+  --primaryLight: #24E713;
+  --secondaryLight: #FF3DB5;
+  --secondaryDark: #A30768;
+  --whiteYellowed: #ededbe;
 }
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -56,7 +56,7 @@ body {
 
 .glow-on-hover:before {
   content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background: linear-gradient(45deg, #24E713  , #FF3DB5   );
   position: absolute;
   top: -2px;
   left:-2px;

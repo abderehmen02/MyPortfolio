@@ -14,7 +14,7 @@ export const PrimaryBtn : React.FC<ButtonProps> = ({children , className , ...pr
 }
 
 export const OutlinedBtn : React.FC<ButtonProps> = ({children , className , ...props})=>{
-    return    <button {...props} className="px-4 py-2 hover:text-secondaryLight" >
+    return    <button {...props} className="px-4 py-2 text-secondaryLight hover:text-secondaryDark" >
 <div className='DarkBtn' ></div>    {children}
         </button>
 }
