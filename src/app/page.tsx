@@ -3,6 +3,7 @@ import { Description } from '@/components/description'
 import { ExperienceSection } from '@/components/experience'
 import { HomeHeading } from '@/components/heading'
 import { Hero } from '@/components/hero'
+import { PersonalProjects } from '@/components/personalProjects'
 import { TechsSection } from '@/components/techs'
 import Image from 'next/image'
 
@@ -13,6 +14,7 @@ export default function Home() {
 <Hero/>
 <Description/>
 <ExperienceSection/>
+<PersonalProjects/>
 <CertaficateSection/>
 <TechsSection/>
     </main>

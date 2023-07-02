@@ -101,3 +101,35 @@ body {
   100% { background-position: 0 0; }
 }
 
+.projectsList {
+  text-align:center;
+  border-top: 3px groove;
+  border-left: 3px groove ;
+  border-image:   linear-gradient( 50deg ,  yellow ,  red , teal , green ,  pink ) 5;
+  animation-name : animateborder ;
+  animation-duration:  5s ;
+  animation-timing-function: ease-in ;
+  animation-iteration-count: infinite;
+}
+@keyframes animateborder {
+  0% {
+    border-image:   linear-gradient( 50deg , var(--primaryLight) , var(--secondaryLight) ,  var(--primaryDark) ) 5;
+  }
+  50% {
+    border-image:   linear-gradient( 50deg ,var(--secondaryLight) , var(--primaryLight) , var(--secondaryDark)  ) 5;
+  }
+  100% {
+    border-image:   linear-gradient( 50deg ,var(--primaryDark) , var(--secondaryLight) , var(--primaryLight)  ) 5;
+  }
+
+}
+
+
+
+.projectsListConteiner {
+  width : fit-content ;
+  height :fit-content ;
+  border-radius: 10px;
+  overflow: hidden; /* Ensures the border doesn't extend beyond the rounded corners */
+}
+
