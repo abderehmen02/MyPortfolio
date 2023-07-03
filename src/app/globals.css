@@ -133,3 +133,7 @@ body {
   overflow: hidden; /* Ensures the border doesn't extend beyond the rounded corners */
 }
 
+.personalProjectContainer{
+  height: fit-content;
+  min-height: 600px;
+}
