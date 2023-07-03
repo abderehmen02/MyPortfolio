@@ -6,7 +6,7 @@ import React from "react";
 import {motion} from "framer-motion"
 
 export const ExperienceCard : React.FC<experienceType> = ({title , company , technologies  , url , logo })=>{
-    return <div className="relative w-1/3" ><motion.div initial={{bottom: '0px'}} whileHover={{bottom : '20px'}}  className="flex relative  cursor-pointer flex-col w-full bg-white text-black rounded-t-xl  border-gray-700 rounded-xl  " >
+    return <div className="relative w-1/3" ><motion.div initial={{bottom: '0px'}} whileHover={{bottom : '20px'}}  className="flex relative  cursor-cell flex-col w-full bg-white text-black rounded-t-xl  border-gray-700 rounded-xl  " >
 <img src={logo} className="w-full h-80 border-b-gray-900 rounded-t-xl border-b-2" />
 <div className="flex py-4 flex-col px-11 gap-7  items-center" >
 <div className="flex flex-col gap-3 py-6" >
