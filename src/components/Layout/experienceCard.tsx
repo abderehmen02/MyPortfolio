@@ -18,7 +18,7 @@ export const ExperienceCard : React.FC<experienceType> = ({title , company , tec
     technologies.map(tech =><li>{tech}</li> )
 }
 </ul>
-<PrimaryBtn className="px-4 w-full" onClick={()=>window.open(url)}>See Website</PrimaryBtn>
+<a href={url} target="_blank" ><PrimaryBtn className="px-4 w-full" >See Website</PrimaryBtn></a>
 
 </div>   
  </motion.div>
