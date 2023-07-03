@@ -6,6 +6,7 @@ import { HomeHeading } from '@/components/heading'
 import { Hero } from '@/components/hero'
 import { PersonalProjects } from '@/components/personalProjects'
 import { TechsSection } from '@/components/techs'
+import { TestomonialSection } from '@/components/testomonialSection'
 import Image from 'next/image'
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
 <ExperienceSection/>
 <PersonalProjects/>
 <CertaficateSection/>
+<TestomonialSection/>
 <TechsSection/>
 <ContactForm/>
     </main>
