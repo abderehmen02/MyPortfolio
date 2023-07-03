@@ -10,10 +10,10 @@ const [CurrentProject, setCurrentProject] = useState<number>(0)
 const project : personalProjectType = personalProjects[CurrentProject]
 return <div className="flex items-center px-10 gap-8 py-4  flex-col relative bg-black text-white w-full">
 <Text className=" capitalize text-5xl text-primaryLight " >personal projects</Text>
-<div  className="flex items-center " >
-<div className="flex personalProjectContainer flex-col gap-8 py-5 cursor-cell bg-gray-900 rounded-2xl border-2  w-2/3" >
-    <div className="flex px-3 py-3 justify-around items-center" >
-    <div className="flex  gap-6 text-2xl " >
+<div  className="flex items-center flex-col laptop:flex-row " >
+<div className="flex personalProjectContainer flex-col gap-8 py-5 cursor-cell bg-gray-900 rounded-2xl border-2 w-ful  laptop:w-2/3" >
+    <div className="flex flex-col laptop:flex-row px-3 py-3 justify-around items-center" >
+    <div className="flex  gap-6 text-2xl hd " >
  <a href={project.github} target="_blank" >   <i className="bi bi-github hover:text-secondaryDark cursor-pointer"></i></a>
   <a href={project.link} target="_blank" >  <i className="bi bi-box-arrow-up-right hover:text-secondaryDark cursor-pointer"></i></a> 
     </div>
