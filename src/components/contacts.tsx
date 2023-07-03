@@ -1,10 +1,10 @@
-import { Text } from "@/ui/typography"
+import { BlodText, Text } from "@/ui/typography"
 
 export const ContactForm : React.FC = ()=>{
-    return<div id="contactForm" className=" flex w-full relative items-center justify-center bg-black" >
+    return<div style={{borderTop: '0.5px solid white'}} id="contactForm" className=" flex w-full relative items-center justify-center bg-black " >
      <div className="flex rounded-lg flex-col w-full laptop:w-2/3  items-center justify-center px-4 py-8" >
 <div  className="flex flex-col gap-4 my-4">
-<Text className="text-4xl text-center font-bold text-whiteYellwed " > CONTACT US</Text>
+<BlodText className="text-4xl text-center   text-primaryLight " > CONTACT US</BlodText>
 <Text  className="text-xl text-center laptop:text-start text-white ">Leave us a little info, and we&apos;ll be in touch.</Text>
 </div>
 <form className="flex flex-col gap-9 w-full" >
