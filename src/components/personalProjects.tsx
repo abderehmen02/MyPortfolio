@@ -12,8 +12,8 @@ return <div className="flex items-center px-10 gap-5 py-4 relative bg-black text
 <div className="flex personalProjectContainer flex-col gap-8 py-5 cursor-cell bg-gray-900 rounded-2xl border-2  w-2/3" >
     <div className="flex px-3 py-3 justify-around items-center" >
     <div className="flex  gap-6 text-2xl " >
-    <i className="bi bi-github hover:text-secondaryDark cursor-pointer"></i>
-    <i className="bi bi-box-arrow-up-right hover:text-secondaryDark cursor-pointer"></i> 
+ <a href={project.github} target="_blank" >   <i className="bi bi-github hover:text-secondaryDark cursor-pointer"></i></a>
+  <a href={project.link} target="_blank" >  <i className="bi bi-box-arrow-up-right hover:text-secondaryDark cursor-pointer"></i></a> 
     </div>
     <div className="flex items-center flex-col" >
     <BlodText className="text-4xl text-primaryLight" >{project.name}</BlodText>
