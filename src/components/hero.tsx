@@ -7,7 +7,7 @@ import { HeroTextTyping } from "@/ui/animations/HeroTyping"
 
 
 export const Hero : React.FC = ()=>{
-return <div className="flex flex-col laptop:flex-row bg-black px-6   text-white gap-16  relative  min-h-screen  py-20 w-full  items-center justify-center">
+return <div className="flex flex-col laptop:flex-row bg-black px-6   text-white gap-16  relative  min-h-screen laptop:min-h-fit  py-20 w-full  items-center justify-center">
 <div className="flex-col items-center w-full laptop:w-8/12 flex justify-center gap-8 " >
 <BlodText className=" text-4xl laptop:text-6xl text-center font-bold text-whiteYellwed w-fit" >Next js , <HeroTextAnimation> Mern Stack </HeroTextAnimation> Developer </BlodText>
 <BlodText className=" text-xl laptop:text-2xl h-28  capitalize font-bold w-fit text-center" > 
