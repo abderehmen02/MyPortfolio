@@ -24,17 +24,6 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  scroll-behavior:  smooth;
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 
 
 
@@ -136,4 +125,14 @@ body {
 .personalProjectContainer{
   height: fit-content;
   min-height: 600px;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  scroll-behavior:  smooth;
+}
+.appContainer{
+  max-width: 1500px;
 }
