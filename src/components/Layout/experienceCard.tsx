@@ -15,7 +15,7 @@ export const ExperienceCard : React.FC<experienceType> = ({title , company , tec
 </div>
 <ul className="list-disc capitalize " >
         {
-    technologies.map(tech =><li>{tech}</li> )
+    technologies.map(tech =><li key={tech}>{tech}</li> )
 }
 </ul>
 <a href={url} target="_blank" ><PrimaryBtn className="px-4 w-full" >See Website</PrimaryBtn></a>

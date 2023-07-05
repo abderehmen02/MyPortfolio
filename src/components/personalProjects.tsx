@@ -48,7 +48,7 @@ return <div className="flex items-center px-4 laptop:px-10 gap-8 py-4  flex-col 
     <div className=" w-full laptop:w-1/3 flex gap-3 laptop:gap-10   justify-center   flex-col items-center" >
             <Text className="text-3xl text-primaryLight uppercase text-center" >Projects</Text>
             <ul className=" flex  px-4 flex-col  gap-4  py-6 rounded-xl projectsList w-fit " >
-            {personalProjects.map( ( project , index )=><li onClick={()=>setCurrentProject(index)} className={cn(["text-xl   cursor-pointer  text-start"  , {"text-secondaryLight" : personalProjects[CurrentProject].name === project.name  } , { "hover:text-secondaryDark " : personalProjects[CurrentProject].name !== project.name } ])} > <img style={{border: '0.25px solid #fff'}} className="w-7 mx-3 h-7 inline rounded-full" src={project.logo} />    {project.name}  </li>)}
+            {personalProjects.map( ( project , index )=><li key={project.name} onClick={()=>setCurrentProject(index)} className={cn(["text-xl   cursor-pointer  text-start"  , {"text-secondaryLight" : personalProjects[CurrentProject].name === project.name  } , { "hover:text-secondaryDark " : personalProjects[CurrentProject].name !== project.name } ])} > <img style={{border: '0.25px solid #fff'}} className="w-7 mx-3 h-7 inline rounded-full" src={project.logo} />    {project.name}  </li>)}
             </ul>
     </div>
     
