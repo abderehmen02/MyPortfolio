@@ -7,7 +7,7 @@ export const HomeHeading = ()=>{
 <div   onClick={()=>window.scrollTo({ 
     top: 0,
     behavior: 'smooth' // Use 'auto' for instant scrolling
-  })} className="h-14 cursor-pointer flex relative" > <MyAvatar/></div>
+  })} className="h-14 cursor-pointer flex  w-20 px-0 relative" > <MyAvatar/></div>
 <div className="gap-2 flex laptop:hidden" >
  <a href="#contactForm" className="block text-3xl laptop:hidden text-secondaryLight" ><i className="bi  mx-1 bi-telephone"></i></a>
 <a href='https://github.com/abderehmen02' target="_blank"  className="block text-3xl laptop:hidden text-secondaryLight"  > <i className="bi mx-3 mx bi-github"></i></a>
