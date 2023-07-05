@@ -18,8 +18,8 @@ export const personalProjects: personalProjectType[] = [
         'building large complex web apps with typescript, MERN (MongoDB, Express.js, React.js, Node.js), and Redux',
         'contributing to open source projects and using Git to manage app versions and branches',
         'building great user interfaces with Material-UI and Figma',
-        'implementing design patterns to make code clean and manageable',
-        'using tools such as TypeScript and design patterns to make code clean and optimized in the future',
+        'implementing design patterns to make the code clean and manageable',
+        'using tools such as TypeScript and design patterns to make a clean and optimizable code',
         'implementing authorization technologies such as JWT (JSON Web Tokens) to authenticate and authorize users'
       ],
       link: 'https://marvelous-pie-441c92.netlify.app/',

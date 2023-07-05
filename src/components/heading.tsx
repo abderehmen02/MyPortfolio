@@ -9,8 +9,8 @@ export const HomeHeading = ()=>{
     behavior: 'smooth' // Use 'auto' for instant scrolling
   })} className="h-14 cursor-pointer flex relative" > <MyAvatar/></div>
 <div className="gap-2 flex laptop:hidden" >
- <a className="block text-3xl laptop:hidden text-secondaryLight" ><i className="bi  mx-1 bi-telephone"></i></a>
-<a  className="block text-3xl laptop:hidden text-secondaryLight"  > <i className="bi mx-3 mx bi-github"></i></a>
+ <a href="#contactForm" className="block text-3xl laptop:hidden text-secondaryLight" ><i className="bi  mx-1 bi-telephone"></i></a>
+<a href='https://github.com/abderehmen02' target="_blank"  className="block text-3xl laptop:hidden text-secondaryLight"  > <i className="bi mx-3 mx bi-github"></i></a>
 </div>
 <div className=" hidden laptop:flex  laptop:gap-11" >
 <a   href='https://github.com/abderehmen02' target="_blank" ><OutlinedBtn>See My Code <i className="bi mx-3 mx bi-github"></i> </OutlinedBtn></a>

@@ -1,3 +1,4 @@
+import { sendVisitingEmail } from '@/utils/sendVisitingEmail'
 import './globals.css'
 import "bootstrap-icons/font/bootstrap-icons.css"
 
@@ -12,8 +13,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  sendVisitingEmail({durration : 0})
   return (
     <html lang="en">
+      <head></head>
       <body ><div className='appContainer' >{children}</div></body>
     </html>
   )
