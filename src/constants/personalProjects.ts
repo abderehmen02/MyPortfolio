@@ -1,6 +1,6 @@
 export interface personalProjectType {
  name : string , 
- github : string ,
+ github? : string  ,
  whatIHaveLearned : string[] ,
  link : string , 
  LongDescreption : string ,
@@ -11,6 +11,38 @@ export interface personalProjectType {
 
 
 export const personalProjects: personalProjectType[] = [
+  {
+    name : "Stealthgram" ,
+    technologies  : ["Next Js" , "Tailwind Css"  , "Figma UI / UX" , "Git" , "API integratioin" , "Typescript" ] ,
+    link : "https://stealthgram.com" ,
+    logo : "/stealthgram.ico" ,
+    whatIHaveLearned: [
+      'Building and scaling a project with thousands of users',
+      'Integrating third party api to Next js app',
+      'Testing features and making sure that features are running whiout problems',
+      'implementing design patterns and writing a clean and a scalble code',
+      ' ussing latest modern technologies such as Next js 13 app directory to build and scale the project',
+      'ussing git and github to manage the app versions'
+    ],
+    ShortDescreption : "download instagram stories , reels , highlights , posts and medias " ,
+    LongDescreption : "a web app that allows users to view and download instagram stories , reels , highlights , posts , medias ; the app will allow you to search for any instagram profile ussing his username or profile link and downlad any media in that profile , or you can download a media ussing it's link by pasting the link of the media"
+}   ,
+{
+    name : "Roamio" ,
+    technologies  : ["Next Js" , "Mongodb"  , "Tailwind Css"  , "Figma UI / UX" , "Git" , "API integratioin" , "Typescript"  ] ,
+    link : "https://roamio-ieuj.vercel.app" ,
+    logo : "/roamioLogo.png" ,
+    whatIHaveLearned: [
+      'Integration authentication with google and jwt tokens',
+      'implementing design patterns and write a clean code to scale large applications',
+      'ussing tools such as zod ,useQuery and toast to write a clean and reusble code',
+      'implementing design patterns and writing a clean and a scalble code',
+      'ussing git and github to manage the app versions'
+    ],
+    ShortDescreption : "a web app to search for cities according to your prefrences" ,
+    LongDescreption : "search and find cities according to your prefrences , you can find historical cities that includes a lot's of historic architecture , you can also find remantic cities ...etc , you can also like , dislike , leave a review for the city and save the city if you are loged in , also you can explore the landmarks of the city"
+} ,
+
     {
       name: 'Day After Day',
       github: 'https://github.com/abderehmen02/Day-After-Day',
@@ -28,6 +60,19 @@ export const personalProjects: personalProjectType[] = [
       logo: '/dayAfterDayLogo.png',
       technologies: ['MERN stack', 'TypeScript', 'Redux', 'Design patterns', 'Git', 'Material-UI', 'Figma']
     },
+    {
+      name : "Stellar Computing" ,
+      technologies  : ["Next Js" , "Tailwind Css" , "Git" , "API integratioin"  ] ,
+      link : "https://stellarcomputing.ca/" ,
+      logo : "/stellarLogo.png" ,
+      whatIHaveLearned: [
+       "Implementing taiwnd css and material ui styles insuring responsiveness of the website" ,
+      
+      ],
+      ShortDescreption : "a website for an IT team " ,
+      LongDescreption : "a website that describes an IT computing team , their experiences , roles ...etc"
+    }   ,
+    
     {
       name: 'ChatX',
       logo: '/ChatXLogo.ico',
