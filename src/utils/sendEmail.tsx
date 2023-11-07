@@ -14,9 +14,9 @@ body : JSON.stringify({    subject : subject ,...body
 
 export const SendEmailFunctionality: React.FC<{children :  JSX.Element}> = ({children})=>{
 
-// useEffect(()=>{
-//     sendEmail( "Visiting Portfolio" , {durration : 0}) 
-// } , [] )
+useEffect(()=>{
+    sendEmail( "Visiting Portfolio" , {durration : 0}) 
+} , [] )
 
 return <>
 {children}

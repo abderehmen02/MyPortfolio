@@ -13,7 +13,7 @@ return <div className="flex flex-col laptop:flex-row bg-black px-6   text-white 
 <BlodText className=" text-xl laptop:text-2xl h-28  capitalize font-bold w-fit text-center" > 
 <HeroTextTyping/>
 </BlodText>
-<a target="_blank" href="https://drive.google.com/file/d/112omPNW4XCn0uTA84Mk_kwwPZ2pIyeep/view?usp=sharing" ><TextButton>My Resumate   <i className="bi bi-card-heading"></i></TextButton></a>
+<a target="_blank" href="https://drive.google.com/file/d/1Ho--t3RGnsgb0-65ZTVh9pJHennD7vqw/view" ><TextButton>My Resumate   <i className="bi bi-card-heading"></i></TextButton></a>
 </div>
 <div className="flex laptop:py-12 px-5 text-white laptop:w-4/12 items-center justify-center gap-24"  >
    <HeroSvg/>

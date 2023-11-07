@@ -32,6 +32,7 @@ export const personalProjects: personalProjectType[] = [
     technologies  : ["Next Js" , "Mongodb"  , "Tailwind Css"  , "Figma UI / UX" , "Git" , "API integratioin" , "Typescript"  ] ,
     link : "https://roamio-ieuj.vercel.app" ,
     logo : "/roamioLogo.png" ,
+    github : "https://github.com/abderehmen02/Roamio" ,
     whatIHaveLearned: [
       'Integration authentication with google and jwt tokens',
       'implementing design patterns and write a clean code to scale large applications',
@@ -72,21 +73,6 @@ export const personalProjects: personalProjectType[] = [
       ShortDescreption : "a website for an IT team " ,
       LongDescreption : "a website that describes an IT computing team , their experiences , roles ...etc"
     }   ,
-    
-    {
-      name: 'ChatX',
-      logo: '/ChatXLogo.ico',
-      github: 'https://github.com/abderehmen02/Chat-X',
-      link: 'https://stellular-genie-c77a7c.netlify.app/',
-      whatIHaveLearned: [
-        'building complex web apps using Firebase as a database',
-        'working with Material-UI and Figma to build an outstanding UI and UX',
-        'using React Context API to manage state'
-      ],
-      ShortDescreption: 'A chat app similar to Instagram',
-      LongDescreption: 'A social media app where you can see your friends\' posts, write comments, like posts, search for members, and follow other people.',
-      technologies: ['Firebase', 'React.js', 'Material-UI', 'Figma']
-    },
     {
       logo: 'travelWX.png',
       name: 'Travel App',

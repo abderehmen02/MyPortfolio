@@ -4,6 +4,10 @@ import { cn } from "@/lib/utils"
 import { BlodText, Text } from "@/ui/typography"
 import { useState } from "react"
 
+
+
+
+
 export const PersonalProjects : React.FC  = ()=>{
 const [CurrentProject, setCurrentProject] = useState<number>(0)
 const project : personalProjectType = personalProjects[CurrentProject]
@@ -13,7 +17,7 @@ return <div className="flex items-center px-4 laptop:px-10 gap-8 py-4  flex-col 
 <div className=" hidden laptop:flex  personalProjectContainer flex-col gap-8 py-5 cursor-cell bg-gray-900 rounded-2xl border-2 w-ful  laptop:w-2/3" >
     <div className="flex flex-col laptop:flex-row px-3 py-3 justify-around items-center" >
     <div className="flex  gap-6 text-2xl hd " >
- <a href={project.github} target="_blank" >   <i className="bi bi-github hover:text-secondaryDark cursor-pointer"></i></a>
+ { project.github ?  <a href={project.github} target="_blank" >   <i className="bi bi-github hover:text-secondaryDark cursor-pointer"></i></a> : <div className="flex items-center justify-center  text-orange-500 flex-col" ><i className="bi bi-exclamation-triangle-fill"></i><p className="text-xs" >private</p> </div> }
   <a href={project.link} target="_blank" >  <i className="bi bi-box-arrow-up-right hover:text-secondaryDark cursor-pointer"></i></a> 
     </div>
     <div className="flex items-center flex-col" >
