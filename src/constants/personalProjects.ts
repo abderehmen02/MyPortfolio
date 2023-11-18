@@ -55,7 +55,7 @@ export const personalProjects: personalProjectType[] = [
         'using tools such as TypeScript and design patterns to make a clean and optimizable code',
         'implementing authorization technologies such as JWT (JSON Web Tokens) to authenticate and authorize users'
       ],
-      link: 'https://marvelous-pie-441c92.netlify.app/',
+      link: 'https://rad-starlight-a46690.netlify.app/',
       ShortDescreption: 'Productivity and day management app',
       LongDescreption: 'An app to manage your thoughts, set your goals, write your daily journalings and thoughts, and track your daily productivity.',
       logo: '/dayAfterDayLogo.png',
