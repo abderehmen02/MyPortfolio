@@ -1,24 +1,38 @@
-"use client"
-import React , {useEffect} from "react"
+// sendMailjet.ts
+import Mailjet from "node-mailjet";
 
-export const sendEmail  = async ( subject : string ,  body : {durration? : number , message? : string})  =>{
- fetch(`${process.env.NEXT_PUBLIC_SEND_MESSAGE_API}/sendMessage` , {
-    method : 'POST' ,
-        headers : {
-            'Content-Type' :  'application/json'
-        } ,
-body : JSON.stringify({    subject : subject ,...body
-}) })
-}
+const mailjet = Mailjet.apiConnect(
+  process.env.NEXT_PUBLIC_MJ_APIKEY_PUBLIC as string,
+  process.env.MJ_APIKEY_PRIVATE as string
+);
 
+export async function sendEmail({
+  to,
+  subject,
+  text,
+  html,
+}: {
+  to: string;
+  subject: string;
+  text?: string;
+  html?: string;
+}) {
+  const request = mailjet.post("send", { version: "v3.1" }).request({
+    Messages: [
+      {
+        From: {
+          Email: process.env.BUSINESS_EMAIL, // e.g. "send@exmonde.com"
+          Name: "Exmonde",
+        },
+        To: [{ Email: to }],
+        Subject: subject,
+        TextPart: text,
+        HTMLPart: html,
+      },
+    ],
+  });
 
-export const SendEmailFunctionality: React.FC<{children :  JSX.Element}> = ({children})=>{
-
-useEffect(()=>{
-    sendEmail( "Visiting Portfolio" , {durration : 0}) 
-} , [] )
-
-return <>
-{children}
-</>
+  const res = await request;
+  // res.body contains info about the sent message
+  return res.body;
 }
